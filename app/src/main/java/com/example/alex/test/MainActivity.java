@@ -14,6 +14,8 @@ import android.view.MenuItem;
 import com.example.alex.test.fragments.Arena_Fragment;
 import com.example.alex.test.fragments.FragmentMain;
 import com.example.alex.test.fragments.PickerFragment;
+import com.example.alex.test.fragments.SendFragment;
+import com.example.alex.test.fragments.ShareFragment;
 import com.example.alex.test.fragments.Strategy_Fragment;
 
 public class MainActivity extends AppCompatActivity
@@ -91,9 +93,9 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_strategy) {
             fm.beginTransaction().replace(R.id.contentframe,new Strategy_Fragment()).commit();
         } else if (id == R.id.nav_share) {
-
+            fm.beginTransaction().replace(R.id.contentframe,new ShareFragment()).commit();
         } else if (id == R.id.nav_send) {
-
+            fm.beginTransaction().replace(R.id.contentframe,new SendFragment()).commit();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
