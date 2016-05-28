@@ -12,4 +12,23 @@
         android:text="Go pick"
         android:id="@+id/button"
         android:layout_gravity="center" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageButton"
+        android:layout_gravity="left|top"
+        android:background="@drawable/128" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageButton2"
+        android:layout_gravity="center_horizontal|top" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageButton3"
+        android:layout_gravity="right|top" />
 </FrameLayout>
