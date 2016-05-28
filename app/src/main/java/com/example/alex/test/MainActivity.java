@@ -1,11 +1,7 @@
 package com.example.alex.test;
 
-import android.app.Fragment;
 import android.app.FragmentManager;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -14,6 +10,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import com.example.alex.test.fragments.Arena_Fragment;
+import com.example.alex.test.fragments.FragmentMain;
+import com.example.alex.test.fragments.PickerFragment;
+import com.example.alex.test.fragments.Strategy_Fragment;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -86,9 +87,9 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_picker) {
             fm.beginTransaction().replace(R.id.contentframe,new PickerFragment()).commit();
         } else if (id == R.id.nav_arenas) {
-
+            fm.beginTransaction().replace(R.id.contentframe,new Arena_Fragment()).commit();
         } else if (id == R.id.nav_strategy) {
-
+            fm.beginTransaction().replace(R.id.contentframe,new Strategy_Fragment()).commit();
         } else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_send) {
