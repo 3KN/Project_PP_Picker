@@ -2,7 +2,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.PickerFragment">
+    tools:context=".fragments.PickerFragment"
+    android:background="@mipmap/128">
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -17,8 +18,7 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:id="@+id/imageButton"
-        android:layout_gravity="left|top"
-        android:background="@drawable/128" />
+        android:layout_gravity="left|top" />
 
     <ImageButton
         android:layout_width="100dp"
